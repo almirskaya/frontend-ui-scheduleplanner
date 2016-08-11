@@ -71,9 +71,146 @@ body {
 /* Footer
 -----------------------------------------------------------------------------*/
 .footer {
+    box-sizing: border-box;
 	width: 320px;
 	margin: -350px auto 0;
 	height: 350px;
 	background: #393939;
 	position: relative;
+<<<<<<< HEAD
+    font-family: Arial, Tahoma, sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: #c3c3c3;
 }
+
+footer h2{
+    font-family: Arial, Tahoma, sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    color: #dbdbdb;
+    margin-bottom: 15px;
+}
+
+footer .connection{
+    height: 320px;
+    padding-left: 25px;
+}
+
+footer .connect-links{
+    padding-top: 20px;
+}
+
+footer .social-links{
+    list-style: none;
+    padding: 0;
+}
+
+footer .partners-links{
+    list-style: none;
+    padding: 0;
+}
+
+.partners-links .link{
+    display: inline-block;
+    vertical-align: middle;
+    width: 140px;
+    height: 50px;
+}
+
+.partners-links a{
+    display: block;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    
+}
+
+.partners-links .comboapp-link{
+    background-image: url(../images/comboapp-logo.png);
+}
+
+.partners-links .digi-link{
+    background-image: url(../images/digi-logo.png);
+}
+.social-links .link{
+    display: inline-block;
+    vertical-align: middle;
+    width: 44px;
+    height: 44px;
+    margin-right: 10px;
+}
+
+.social-links a{
+    display: block;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.social-links .gmail-link{
+    background-image: url(../images/gmail-icon.png);
+}
+
+.social-links .twitter-link{
+    background-image: url(../images/twitter-icon.png);
+}
+.social-links .facebook-link{
+    background-image: url(../images/facebook-icon.png);
+}
+.social-links .linkedin-link{
+    background-image: url(../images/linkedin-icon.png);
+}
+
+footer .message-text{
+    display: inline-block;
+    width: 134px;
+    color: #eaeaea;
+    background-color: #0d0d0d;
+    margin-bottom: 30px;
+}
+
+.connect-links span{
+    color: #b2b2b2;
+    font-family: "Myriad Pro";
+    font-size: 12px;
+    font-weight: 400;
+    
+}
+
+
+footer .button-subscribe{
+    display: inline-block;
+    width: 68px;
+    color: #eaeaea;
+    background-color: #21689d;
+    background-image: linear-gradient(to top, rgba(108, 108, 108, 0.33) 0%, rgba(255, 255, 255, 0.33) 100%);
+    border: 1px solid #1f1f1f;
+    border-radius: 3px 2px 2px 3px;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25);
+    text-decoration: none;
+    text-align: center;  
+    margin-top: 10px;
+ }
+
+
+footer .copyright{
+    width: 320px;
+    position: absolute;
+    bottom: 0;
+    text-align: right;
+    text-transform: uppercase;
+    border-top: 1px solid;
+    border-top-color: rgba(87, 87, 87, 0.7);
+    box-shadow: 0 -1px 0 #262626;   
+}
+.copyright span{
+    padding-right: 13px;
+}
+=======
+}
+>>>>>>> 8679ebd419e4467fed1cd3ba3365c193e2283960
