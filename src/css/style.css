@@ -95,7 +95,8 @@ body {
 /* Middle
 -----------------------------------------------------------------------------*/
 .content {
-	padding: 0 0 350px;
+    
+	padding: 0 0 340px 0;
 }
 
 
@@ -104,29 +105,43 @@ body {
 /* Footer
 -----------------------------------------------------------------------------*/
 .footer {
-    box-sizing: border-box;
-	width: 320px;
-	margin: -350px auto 0;
-	height: 350px;
+   
+	margin: -350px auto ;
+    min-width: 300px;
+	height: auto;
 	background: #393939;
-	position: relative;
     font-family: Arial, Tahoma, sans-serif;
     font-weight: 400;
     font-size: 12px;
     color: #c3c3c3;
 }
 
-footer h2{
+.footer .wrapper{
+    box-sizing: border-box;
+    width: auto;
+    height: auto;
+    padding: 25px 45px 25px 25px;
+ 
+}
+
+.footer h2{
     font-family: Arial, Tahoma, sans-serif;
     font-size: 22px;
     font-weight: 400;
     color: #dbdbdb;
     margin-bottom: 15px;
+    
 }
 
-footer .connection{
+.footer .connection{
     display: block;
-    padding: 30px 0 0 25px;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.footer .connect-links{
+    margin-bottom: 20px;
 }
 
 .social-links .link{
@@ -135,24 +150,34 @@ footer .connection{
     width: 44px;
     height: 44px;
     margin-right: 10px;
+    
 }
 
 .social-links a{
     display: block;
     background-position: center center;
     background-repeat: no-repeat;
-    width: 100%;
+    width: auto;
     height: 100%;
     overflow: hidden;
 }
 
 
 
-footer .social-links{
+.footer .social-links{
+    display: inline-block;
     list-style: none;
-    padding: 0;
+    padding: 0;  
+    margin: 0;
+    
+    
 }
-
+.footer .social-links .link{
+    display: inline-block;
+    width: 44px;
+  height: 44px;
+    
+}
 .social-links .gmail-link{
     background-image: url(../images/gmail-icon.png);
 }
@@ -169,7 +194,6 @@ footer .social-links{
 
 footer .mail-text{
     display: inline-block;
-    width: 134px;
     color: #eaeaea;
     background-color: #0d0d0d;
     
@@ -180,13 +204,23 @@ footer .mail-text{
     font-family: "Myriad Pro";
     font-size: 12px;
     font-weight: 400;
-   
+    display: inline-block;
     
+       
 }
+
+.subscription span{
+    margin-bottom: 5px;
+    display: inherit;
+}
+
+.footer .mail-text:focus{
+    outline: none;
+}
+
 
 footer .button-subscribe{
     display: inline-block;
-    width: 68px;
     color: #eaeaea;
     background-color: #21689d;
     background-image: linear-gradient(to top, rgba(108, 108, 108, 0.33) 0%, rgba(255, 255, 255, 0.33) 100%);
@@ -195,18 +229,18 @@ footer .button-subscribe{
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25);
     text-decoration: none;
     text-align: center;  
-    margin-top: 10px;
+    
  }
 
-footer .partners-links{
+.footer .partners-links{
+    
     list-style: none;
     padding: 0;
 }
 
-footer .partners{
+.footer .partners{
     display: block;
-    padding-left: 24px;
-    width: auto;
+    width: 100%;
     margin: 0 auto;
     height: auto;
 }
@@ -236,16 +270,95 @@ footer .partners{
 }
 
 
-footer .copyright{
-    width: 320px;
-    position: absolute;
-    bottom: 0;
+.footer .copyright{
+    color: #c3c3c3;
+    box-shadow: 0 1px 0 #262626;   
+    width:100%;
     text-align: right;
     text-transform: uppercase;
     border-top: 1px solid;
     border-top-color: rgba(87, 87, 87, 0.7);
-    box-shadow: 0 -1px 0 #262626;   
+    box-shadow: 0 1px 0 #262626;   
 }
 .copyright span{
-    padding-right: 13px;
+    padding-right: 10px;
+}
+
+@media (min-width: 480px){
+    footer .connection{
+        width: 480px;
+        
+    }
+    .social-links .link{
+        padding-bottom: 20px;
+       
+    }
+    
+    .footer .subscription{
+        display: inline-block;
+        
+    }
+    
+    .footer .connect-links{
+        display: inline-block;
+    }
+    .footer .copyright{
+        text-align: center;
+    }
+    .copyright span{
+        padding: 0;
+    }
+    .footer .wrapper{
+        padding: 45px 45px 25px 25px;
+        
+        width: 480px;
+       
+}
+
+@media (min-width:300px){
+   .footer .wrapper{
+        padding: 38px 10px;
+    }  
+}
+
+@media only screen and (min-width: 768px){
+     .footer .wrapper{
+        width: 768px;
+        padding: 83px 40px;
+         
+         
+         
+       
+    }
+    
+    .footer .subscription{
+        display: block; 
+       
+    }
+    
+    .footer .partners{
+        display: inline-block;
+        width: auto;
+        margin: 0 auto;
+        vertical-align: top;
+        
+       
+         
+    }
+    
+    
+    .social-links .link{
+        padding-bottom: 0px;
+       
+    }
+   
+    .footer .connection{
+        display: inline-block;
+        width: auto;
+        padding-right: 150px;
+    }
+    
+     
+        
+    
 }
