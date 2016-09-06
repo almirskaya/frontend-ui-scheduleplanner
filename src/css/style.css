@@ -5,7 +5,7 @@ html {
 }
 
 body {
-	   font-family: Arial, Tahoma, sans-serif;
+	    font-family: Arial, Tahoma, sans-serif;
     	font-size: 14px;
     	font-weight: 400;
     	color: #3e3e3e;
@@ -44,9 +44,7 @@ body {
 }
 
 .mainmenu .menu-item{
-  
-    display: inline-block;
-   
+  display: inline-block; 
 }
 
 
@@ -85,6 +83,22 @@ body {
 
 @media (min-width: 480px){
     .header .mainmenu .item  a{
+        font-size: 13px;
+        padding: 10px 10px;
+        
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .header .mainmenu .item  a{
+        font-size: 16px;
+        padding: 25px 25px;
+        
+    }
+}
+
+@media (min-width: 1260px){
+    .header .mainmenu .item  a{
         font-size: 16px;
         padding: 25px 25px;
         
@@ -94,7 +108,7 @@ body {
 -----------------------------------------------------------------------------*/
 .content {
     
-	padding: 0 0 340px 0;
+	padding: 0 0 350px 0;
 }
 
 
@@ -106,6 +120,7 @@ body {
    
 	margin: -350px auto ;
     min-width: 300px;
+    min-height: 350px;
 	height: auto;
 	background: #393939;
     font-size: 12px;
@@ -130,7 +145,6 @@ body {
 .footer .connection{
     display: block;
     width: 100%;
-    height: 100%;
     
 }
 
@@ -225,7 +239,6 @@ footer .button-subscribe{
  }
 
 .footer .partners-links{
-    
     list-style: none;
     padding: 0;
 }
@@ -235,18 +248,21 @@ footer .button-subscribe{
     width: 100%;
     margin: 0 auto;
     height: auto;
+    white-space: nowrap;
 }
 .partners-links .link{
     display: inline-block;
     vertical-align: middle;
     width: 140px;
     height: 50px;
+    
 }
 
 .partners-links a{
     display: block;
     background-position: center center;
     background-repeat: no-repeat;
+  
     width: 100%;
     height: 100%;
     overflow: hidden;
@@ -264,7 +280,9 @@ footer .button-subscribe{
 
 .footer .copyright{
     color: #c3c3c3;
-    box-shadow: 0 1px 0 #262626;   
+    box-shadow: 0 1px 0 #262626;
+    position: absolute;
+    bottom: 0;
     width:100%;
     text-align: right;
     text-transform: uppercase;
@@ -275,11 +293,43 @@ footer .button-subscribe{
 .copyright span{
     padding-right: 10px;
 }
+@media (min-width:300px){
+  .content {
+    
+	padding: 0 0 350px 0;
+}
 
+.footer {
+   
+	margin: -350px auto ;
+    min-width: 300px;
+    min-height: 350px;
+}
+    
+   .footer .wrapper{
+        height: 305px;
+        padding: 38px 10px;
+    }  
+    .footer .copyright{
+        line-height: 31px;
+    }
+}
 @media (min-width: 480px){
+      .content {
+    
+	padding: 0 0 300px 0;
+}
+
+.footer {
+   
+	margin: -300px auto ;
+    min-width: 300px;
+    min-height: 300px;
+}
+    
     footer .connection{
         width: 480px;
-        
+       height: 120px;
     }
     .social-links .link{
         padding-bottom: 20px;
@@ -296,31 +346,41 @@ footer .button-subscribe{
     }
     .footer .copyright{
         text-align: center;
+        line-height: 35px;
     }
-    .copyright span{
-        padding: 0;
-    }
+    
     .footer .wrapper{
-        padding: 45px 45px 25px 25px;
-        
+       height: 260px;
         width: 480px;
-       
-}
+        
+    }
+    .partners{
+      
+        margin-bottom: 25px;
+    }
 
-@media (min-width:300px){
-   .footer .wrapper{
-        padding: 38px 10px;
-    }  
 }
-
+   
 @media only screen and (min-width: 768px){
+          .content {
+    
+	padding: 0 0 260px 0;
+}
+
+.footer {
+   
+	margin: -260px auto ;
+    min-width: 300px;
+    min-height: 260px;
+}
+    
+    
+    
      .footer .wrapper{
+        height: 210px;
         width: 768px;
-        padding: 83px 40px;
-         
-         
-         
-       
+        padding: 8px 40px;
+     
     }
     
     .footer .subscription{
@@ -337,7 +397,7 @@ footer .button-subscribe{
        
          
     }
-    
+ 
     
     .social-links .link{
         padding-bottom: 0px;
@@ -348,9 +408,40 @@ footer .button-subscribe{
         display: inline-block;
         width: auto;
         padding-right: 150px;
-    }
-    
-     
         
+    }
+      .footer .copyright{
+        line-height: 47px;
+    }
+  
+}
+
+@media (min-width: 1260px){
+          .content {
     
+	padding: 0 0 185px 0;
+}
+
+.footer {
+   
+	margin: -185px auto ;
+    min-width: 300px;
+    min-height: 185px;
+}
+
+       .footer .wrapper{
+        height: 150px;
+        width: 1260px;
+           margin: 0 auto;
+        padding: 10px 10px 10px 140px;
+     
+    }
+ .footer .subscription{
+        display: inline-block; 
+       padding-right: 80px;
+    }
+     .footer .copyright{
+        line-height: 24px;
+    }
+  
 }
