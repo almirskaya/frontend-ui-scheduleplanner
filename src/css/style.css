@@ -111,13 +111,217 @@ body {
 	padding: 0 0 350px 0;
 }
 
+.slider{
+    height: auto;
+    padding: 30px;
+    background-image:url(../images/bg-slider.png);
+     background-size: cover;
+}
+
+.apps{
+    height: auto;
+    padding: 30px;
+   
+    background-image: url(../images/bg-apps.png);
+     background-size: cover;
+}
+
+.features{
+    padding: 30px;
+    height: auto;
+    background-image: url(../images/bg-features.png);
+    background-size: cover;
+   
+}
+ .feedback{
+     display: block;
+    height: auto;
+    background-image: url(../images/bg-feedback.png);
+     background-size: cover;
+     padding: 30px;
+}
+
+.app{
+    list-style: none;
+   
+}
+.application{
+    position: relative;
+    display: block;
+    width: auto;
+    padding-left: 130px;
+    padding-bottom: 30px;
+    word-wrap: break-word;
+    color: #3e3e3e;
+    font-family: Arial;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    overflow: hidden;
+}
+.second-group-apps .application:last-child{
+    padding-bottom: 0px;
+}
+
+
+
+.application h2{
+    color: #915542;
+    font-family: Arial;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 26px;
+    padding-bottom: 20px;
+}
+.image{
+    position: absolute;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+  
+}
+
+.feature{
+    list-style: none;
+   
+}
+.feat{
+    position: relative;
+    display: block;
+    width: auto;
+    padding-left: 100px;
+    padding-bottom: 40px;
+    padding-top: 10px;
+   text-shadow: 0 1px 0 rgba(44, 26, 18, 0.75);
+    color: white;
+    font-family: Arial;
+    font-size: 20px;
+    font-weight: 400;
+    vertical-align: middle;
+ 
+}
+
+.second-group-features .feat:last-child{
+  padding-bottom: 0px;
+}
+
+
+
+.feat > div{
+    width: 35px;
+    height:  40px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-repeat: no-repeat;
+}
+
+.password-feature{
+    
+    background-image: url(../images/password-feature.png);
+}
+.copy-paste-feature{
+     background-image: url(../images/copy-paste-feature.png);
+}
+.tasks-feature{
+    background-image: url(../images/tasks-feature.png); 
+}
+.nots-feature{
+     background-image: url(../images/nots-feature.png);
+}
+
+.feeds{
+    list-style: none;
+}
+.feeds-item{
+    padding-bottom: 40px;
+    color: #3e3e3e;
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.feeds-item:last-child{
+    padding-bottom: 0px;
+}
+
+.feeds h3{
+    color: #8f4f35;
+    font-family: Arial;
+    font-size: 18px;
+    font-style: italic;
+    line-height: 24px;
+    text-align: right;
+}
+
+
+@media (min-width: 1260px){
+    .apps{
+        
+        padding-left: 50px;
+    }
+    .first-group-apps{
+        display: inline-block;
+        width: 450px;
+        padding-right: 85px;
+        margin-left: 160px;
+       
+    }
+    .second-group-apps{
+        display: inline-block;
+        width: 450px;
+        margin-right: 160px;
+       vertical-align: top;
+    }
+    .application{
+        height: 400px;
+    }
+    .first-group-features{
+        display: inline-block;
+        width: 450px;
+        padding-right: 85px;
+        margin-left: 160px;
+       
+    }
+    .second-group-features{
+        display: inline-block;
+        width: 450px;
+        margin-right: 160px;
+        vertical-align: top;
+    }
+    
+     .feat{
+        height: 20px;
+    }
+    
+    .feeds-item{
+        display: inline-block;
+        height: 115px;
+        width: 300px;
+        margin-right: 50px;
+        
+    }
+    
+    .feeds-item:last-child{
+        margin-right: 0px;
+    }
+    .feeds{
+        display: block;
+        margin: 0px 160px;
+     
+    }
+}
+
+
+
 
 
 
 /* Footer
 -----------------------------------------------------------------------------*/
 .footer {
-   
+   position: relative;
 	margin: -350px auto ;
     min-width: 300px;
     min-height: 350px;
@@ -281,8 +485,9 @@ footer .button-subscribe{
 .footer .copyright{
     color: #c3c3c3;
     box-shadow: 0 1px 0 #262626;
-    position: absolute;
+     position: absolute;
     bottom: 0;
+    right: 0;
     width:100%;
     text-align: right;
     text-transform: uppercase;
@@ -292,6 +497,7 @@ footer .button-subscribe{
 }
 .copyright span{
     padding-right: 10px;
+   
 }
 @media (min-width:300px){
   .content {
@@ -351,7 +557,7 @@ footer .button-subscribe{
     
     .footer .wrapper{
        height: 260px;
-        width: 480px;
+        width: 450px;
         
     }
     .partners{
@@ -380,6 +586,7 @@ footer .button-subscribe{
         height: 210px;
         width: 768px;
         padding: 8px 40px;
+     
      
     }
     
@@ -431,9 +638,9 @@ footer .button-subscribe{
 
        .footer .wrapper{
         height: 150px;
-        width: 1260px;
+        width: 1200px;
            margin: 0 auto;
-        padding: 10px 10px 10px 140px;
+        padding: 10px 10px 10px 130px;
      
     }
  .footer .subscription{
