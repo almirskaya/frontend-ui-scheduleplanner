@@ -115,7 +115,7 @@ body {
     height: auto;
     padding: 30px;
     background-image:url(../images/bg-slider.png);
-     background-size: cover;
+     background-repeat: repeat;
 }
 
 .apps{
@@ -123,21 +123,21 @@ body {
     padding: 30px;
    
     background-image: url(../images/bg-apps.png);
-     background-size: cover;
+background-repeat: repeat;
 }
 
 .features{
     padding: 30px;
     height: auto;
     background-image: url(../images/bg-features.png);
-    background-size: cover;
+    background-repeat: repeat;
    
 }
  .feedback{
      display: block;
     height: auto;
     background-image: url(../images/bg-feedback.png);
-     background-size: cover;
+     background-repeat: repeat;
      padding: 30px;
 }
 
